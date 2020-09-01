@@ -35,7 +35,3 @@ class ShowTest < Minitest::Test
     assert_equal ["David Hasselhoff", "William Daniels"], @knight_rider.actors
   end
 end
-
-
-# knight_rider.actors
-# => ["David Hasselhoff", "William Daniels"]
