@@ -17,7 +17,13 @@ class Show
     highest_paid = @characters.max_by do |character|
       character.salary
     end
-    highest_paid.actor 
+    highest_paid.actor
+  end
+
+  def actors
+    actors = @characters.map do |character|
+      character.actor
+    end
   end
 
 end
