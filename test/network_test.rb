@@ -56,13 +56,6 @@ end
 
 
 
-
-# nbc.shows
-# => [#<Show:0x00007fe5f8398970...>, #<Show:0x00007fe5f88b0a20...>]
-
-# nbc.main_characters
-# => [#<Character:0x00007f98a4ba8dc8...>]
-
 # nbc.actors_by_show
 # => {
       #<Show:0x00007fe5f8398970...> => ["David Hasselhoff", "William Daniels"],

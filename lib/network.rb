@@ -7,6 +7,16 @@ class Network
   end
 
   def add_show(show)
-    @shows << show 
+    @shows << show
+  end
+
+  def main_characters
+    #salary > 500,000 and name is upcase
+    all_characters = @shows.map do |show|
+      show.characters
+    end.flatten
+    all_characters.select do |character|
+      character.salary > 500_000 && character.name == character.name.upcase
+    end
   end
 end
