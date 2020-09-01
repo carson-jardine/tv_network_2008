@@ -19,4 +19,12 @@ class Network
       character.salary > 500_000 && character.name == character.name.upcase
     end
   end
+
+  def actors_by_show
+    actors_by_show = Hash.new
+    @shows.each do |show|
+      actors_by_show[show] = show.actors
+    end
+    actors_by_show
+  end
 end
