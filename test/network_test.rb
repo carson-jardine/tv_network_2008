@@ -73,11 +73,3 @@ class NetworkTest < Minitest::Test
     assert_equal expected, @nbc.actors_by_show
   end
 end
-
-
-
-# nbc.actors_by_show
-# => {
-      #<Show:0x00007fe5f8398970...> => ["David Hasselhoff", "William Daniels"],
-      #<Show:0x00007fe5f88b0a20...> => ["Amy Poehler", "Nick Offerman"]
-#    }
