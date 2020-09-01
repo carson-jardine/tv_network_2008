@@ -29,12 +29,13 @@ class ShowTest < Minitest::Test
   def test_it_can_find_the_highest_paid_actor
     assert_equal "David Hasselhoff", @knight_rider.highest_paid_actor
   end
+
+  def test_it_can_find_actors
+
+    assert_equal ["David Hasselhoff", "William Daniels"], @knight_rider.actors
+  end
 end
 
-
-
-# knight_rider.highest_paid_actor
-# => "David Hasselhoff"
 
 # knight_rider.actors
 # => ["David Hasselhoff", "William Daniels"]
