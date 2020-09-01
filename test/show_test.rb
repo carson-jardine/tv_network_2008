@@ -22,18 +22,12 @@ class ShowTest < Minitest::Test
     assert_equal [@michael_knight, @kitt], @knight_rider.characters
   end
 
+  def test_it_can_find_total_salary
+    assert_equal 2_600_000, @knight_rider.total_salary
+  end
 end
 
 
-
-# knight_rider.name
-# => "Knight Rider"
-
-# knight_rider.creator
-# => "Glen Larson"
-
-# knight_rider.characters
-# => [#<Character:0x00007f8327213de0...>, #<Character:0x00007f8326ab57d8...>]
 
 # knight_rider.total_salary
 # => 2600000
